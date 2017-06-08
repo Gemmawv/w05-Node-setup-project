@@ -1,6 +1,5 @@
 const fs = require('fs');
 const exec = require('child_process').exec;
-// const gitIgnore = require('./.gitIgnore')
 
 // check new project name doesn't already exist
 // create new folder on desktop with new project name
@@ -9,13 +8,9 @@ const exec = require('child_process').exec;
 // create spec folder
 // create spec file
 // create package.json file 
-// create .gitignore file - use readfile?
+// create .gitignore file
 // create node modules (and auto run npm install)
 // create eslint file
-
-
-// - to check if a file already exists
-
 
 
 fs.mkdir('../new_project', function (err) {
@@ -53,27 +48,3 @@ fs.mkdir('../new_project', function (err) {
     console.log('New project directory created successfully!');
 });
 
-
-
-
-
-
-// fs.open('<directory>', 'a+', (err, fd) => {
-// });
-
-
-
-// node_modules
-// */**/node_modules
-// .DS_Store
-// */**/.DS_Store
-// *.log
-// */**/*.log
-// .vscode
-// */**/.vscode
-// */**/.idea/*
-// .idea/*
-// bundle.js
-// bundle.js.map
-// **/*/bundle.js
-// **/*/bundle.js.map
